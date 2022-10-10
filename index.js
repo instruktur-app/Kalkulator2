@@ -25,6 +25,18 @@ function pembagian(s, d) {
   return 'ini bukan number';
 }
 
+function penjumlahan_menurun(bilangan) {
+  let angka = 0
+  if(bilangan < 1){
+    return "angka yang dimasukan harus >= 1"
+  }
+  for(let i = bilangan; i >= 1; i--){
+    angka += i
+  }
+  return angka
+}
+
 console.log(penjumlahan(10, 15));
 console.log(pengurangan(10, 15));
 console.log(perkalian(5, 3));
+console.log(penjumlahan_menurun(1));
