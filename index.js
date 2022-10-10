@@ -36,7 +36,17 @@ function penjumlahan_menurun(bilangan) {
   return angka
 }
 
+function cek_ganjil(bilangan) {
+  if(bilangan %2 != 0 ){
+    return "true"
+  }
+  else{
+    return "false"
+  }
+}
+
 console.log(penjumlahan(10, 15));
 console.log(pengurangan(10, 15));
 console.log(perkalian(5, 3));
 console.log(penjumlahan_menurun(1));
+console.log(cek_ganjil(10));
