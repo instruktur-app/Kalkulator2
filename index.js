@@ -37,16 +37,21 @@ function penjumlahan_menurun(bilangan) {
 }
 
 function cek_ganjil(bilangan) {
-  if(bilangan %2 != 0 ){
-    return "true"
+  return bilangan % 2 != 0
+}
+function mencariKelipatan3(bilangan){
+  let angka = ''
+  for (let i = 1; i<= bilangan; i++){
+    if(i % 3 == 0){
+      angka += String(i) + "_"
+    }
   }
-  else{
-    return "false"
-  }
+  return angka
 }
 
 console.log(penjumlahan(10, 15));
 console.log(pengurangan(10, 15));
 console.log(perkalian(5, 3));
 console.log(penjumlahan_menurun(1));
-console.log(cek_ganjil(10));
+console.log(cek_ganjil(5));
+console.log (mencariKelipatan3(100))
