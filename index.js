@@ -61,10 +61,26 @@ function cekKelipatanLimaDanTujuh (bilangan) {
   }
 }
 
+function fizzBuzz(bilangan){
+  for(let i=1; i<=bilangan; i++){
+    if(i%3==0 && i%5==0){
+      console.log(i, "fizzbuzz")
+    }
+    else if(i%3==0){
+      console.log(i, "fizz")
+    }else if(i%5==0){
+      console.log(i, "buzz")
+    }else{
+      console.log(i)
+    }
+  }
+}
+
 console.log(penjumlahan(10, 15));
 console.log(pengurangan(10, 15));
 console.log(perkalian(5, 3));
 console.log(penjumlahan_menurun(1));
 console.log(cek_ganjil(5));
 console.log (mencariKelipatan3(100))
-cekKelipatanLimaDanTujuh(100);
+// cekKelipatanLimaDanTujuh(100);
+fizzBuzz(30);
